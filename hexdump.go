@@ -44,7 +44,6 @@ func ByteToHexAsciiString(b []byte) string {
 		buffer.Write(hex.Bytes())
 		blank := []byte{0x20, 0x20, 0x20}
 		moar := (((columns-1)/4)*3 - hex.Len()) / 3
-		fmt.Printf("moar: %d\n", moar)
 		for i := 0; i < moar; i++ {
 			buffer.Write(blank)
 		}

@@ -1,7 +1,6 @@
 package hexdump
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -12,7 +11,6 @@ func TestByteToHexString(t *testing.T) {
 	if s0 != "0x41 0x42 0x43 0x44 0x45" {
 		t.Errorf("Invalid string encoded:\n%s", s0)
 	}
-	fmt.Printf("%s", s0)
 }
 
 func TestByteToHexAsciiString(t *testing.T) {
